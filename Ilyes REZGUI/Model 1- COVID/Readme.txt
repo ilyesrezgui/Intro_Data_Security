@@ -1,3 +1,6 @@
+🧪 Synthetic Data Generation with UPPAAL for SEIHR Epidemiological Modeling
+This repository contains a UPPAAL-based model of an epidemiological system designed to simulate and verify the logical behavior of disease propagation using the SEIHR model:
+
 S: Susceptible
 
 E: Exposed
@@ -8,4 +11,5 @@ H: Hospitalized
 
 R: Recovered
 
-As we can see, there's going to be logical variation in these variables, for example the nb of hospitalized people can go up and down, while the nb of people susep went down as at first everyone was sucept and then people started dying or the cure was about to be discovered
+The goal is to generate synthetic data by simulating different scenarios and validating logical consistency of state transitions using model checking techniques.
+
