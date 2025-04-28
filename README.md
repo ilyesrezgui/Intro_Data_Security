@@ -31,3 +31,67 @@ This method provides a reliable, scalable, and interpretable alternative to GANs
 - Python scripts (optional) — for automating simulation runs and parsing outputs
 
 
+
+**Variational Autoencoder for Synthetic Timeseries Data**
+# 📋 Project Description
+
+This project implements a Variational Autoencoder (VAE) model to learn and reconstruct synthetic timeseries data. The model is built using TensorFlow (Keras API) and focuses on encoding high-dimensional timeseries into a lower-dimensional latent space, and then decoding them back to approximate the original data.
+The goal is to visualize how well the VAE can learn patterns from the timeseries and generate similar sequences. The project also includes custom training, visualization of the original and reconstructed timeseries, and dimensionality reduction techniques.
+
+
+# 🔁 Repeatable Experiment: Step-by-Step Instructions
+
+## Environment Setup
+
+Install required libraries:
+
+```bash
+pip install numpy matplotlib seaborn tensorflow scikit-learn
+```
+Ensure you are using Python 3.7+ and TensorFlow 2.x.
+
+## Generate Synthetic Data
+-Use the generate_timeseries_data() function to create random timeseries data.
+-Normalize the data (zero mean, unit variance).
+
+## Build the Variational Autoencoder (VAE)
+Define the encoder with two outputs: latent mean and log-variance.
+Define the decoder to reconstruct data from the latent space.
+
+## Training the Model
+Train the VAE with a custom loop using tf.GradientTape.
+The loss function combines:
+  Reconstruction Loss (Mean Squared Error)
+  KL Divergence Loss (regularizes the latent space)
+
+## Visualize Results
+Plot original synthetic timeseries.
+Plot reconstructed timeseries after encoding/decoding.
+Use Seaborn and Matplotlib for better plot aesthetics.
+
+## Run the Code:
+Adjust hyperparameters in the main() function if needed:
+```bash
+num_samples = 3
+num_timesteps = 50
+latent_dim = 2
+epochs = 100
+batch_size = 32
+```
+Run the script to visualize the VAE performance.
+
+# Technologies Used :
+Python 3.7+
+TensorFlow 2.x (Keras API)
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn (for TSNE import, although not used heavily)
+
+# References : 
+
+Tai, B.-C., Li, S.-C., Huang, Y., & Wang, P.-C. (2024). Examining the utility of differentially private synthetic data generated using variational autoencoder with TensorFlow Privacy.
+
+Zhang, Y., Ma, T., Li, T., Sun, X., & Liu, Z. (2024). Small sample data augmentation method for photovoltaic power generation based on improved variational auto-encoder.
+
+Liu, S., Wang, P., Chen, X., Jiang, P., Li, L., & Yin, S. (2025). An anomaly detection method for provincial-side base operation logs based on VAE and Transformer. State Grid Shandong Electric Power Company.
