@@ -51,26 +51,26 @@ pip install numpy matplotlib seaborn tensorflow scikit-learn
 Ensure you are using Python 3.7+ and TensorFlow 2.x.
 
 ## Generate Synthetic Data
--Use the generate_timeseries_data() function to create random timeseries data.
+-Use the generate_timeseries_data() function to create random timeseries data.<br>
 -Normalize the data (zero mean, unit variance).
 
 ## Build the Variational Autoencoder (VAE)
-Define the encoder with two outputs: latent mean and log-variance.
+Define the encoder with two outputs: latent mean and log-variance.<br>
 Define the decoder to reconstruct data from the latent space.
 
 ## Training the Model
-Train the VAE with a custom loop using tf.GradientTape.
-The loss function combines:
-  Reconstruction Loss (Mean Squared Error)
+Train the VAE with a custom loop using tf.GradientTape.<br>
+The loss function combines:<br>
+  Reconstruction Loss (Mean Squared Error)<br>
   KL Divergence Loss (regularizes the latent space)
 
 ## Visualize Results
-Plot original synthetic timeseries.
-Plot reconstructed timeseries after encoding/decoding.
+Plot original synthetic timeseries.<br>
+Plot reconstructed timeseries after encoding/decoding.<br>
 Use Seaborn and Matplotlib for better plot aesthetics.
 
 ## Run the Code:
-Adjust hyperparameters in the main() function if needed:
+Adjust hyperparameters in the main() function if needed:<br>
 ```bash
 num_samples = 3
 num_timesteps = 50
@@ -81,17 +81,19 @@ batch_size = 32
 Run the script to visualize the VAE performance.
 
 # Technologies Used :
-Python 3.7+
-TensorFlow 2.x (Keras API)
-NumPy
-Matplotlib
-Seaborn
+Python 3.7+<br>
+TensorFlow 2.x (Keras API)<br>
+NumPy<br>
+Matplotlib<br>
+Seaborn<br>
 Scikit-learn (for TSNE import, although not used heavily)
 
 # References : 
 
-Tai, B.-C., Li, S.-C., Huang, Y., & Wang, P.-C. (2024). Examining the utility of differentially private synthetic data generated using variational autoencoder with TensorFlow Privacy.
+Tai, B.-C., Li, S.-C., Huang, Y., & Wang, P.-C. (2024). Examining the utility of differentially private synthetic data generated using variational autoencoder with TensorFlow Privacy.<br>
 
-Zhang, Y., Ma, T., Li, T., Sun, X., & Liu, Z. (2024). Small sample data augmentation method for photovoltaic power generation based on improved variational auto-encoder.
+Zhang, Y., Ma, T., Li, T., Sun, X., & Liu, Z. (2024). Small sample data augmentation method for photovoltaic power generation based on improved variational auto-encoder.<br>
+
+Liu, S., Wang, P., Chen, X., Jiang, P., Li, L., & Yin, S. (2025). An anomaly detection method for provincial-side base operation logs based on VAE and Transformer. State Grid Shandong Electric Power Company.
 
 Liu, S., Wang, P., Chen, X., Jiang, P., Li, L., & Yin, S. (2025). An anomaly detection method for provincial-side base operation logs based on VAE and Transformer. State Grid Shandong Electric Power Company.
