@@ -1,3 +1,33 @@
-Synthetic time series data generation 
+# Time Series Synthetic Data Generation via Formal Methods
 
-# Synthetic data generation has become increasingly critical in machine learning and AI, especially in domains where real-world datasets are scarce, sensitive, or expensive to collect — such as healthcare, finance, and engineering. While deep learning models like Recurrent Neural Networks (RNNs), Convolutional Neural Networks (CNNs), and Generative Adversarial Networks (GANs) have been widely used for this purpose, they often struggle to generate long, coherent, and high-quality time series sequences. Common issues include difficulties capturing long-range temporal dependencies, training instability, mode collapse, and scalability limitations. To overcome these challenges, this project explores a novel direction: the use of formal methods, specifically model checking and timed automata, for the generation of synthetic time series data.
+## Overview
+
+This project proposes a novel approach to synthetic time series data generation using **formal methods** instead of traditional deep learning models.  
+We model time-dependent behaviors using **timed automata** and generate synthetic sequences through simulation with **UPPAAL**.  
+This method provides a reliable, scalable, and interpretable alternative to GANs and RNN-based approaches.
+
+## Motivation
+
+- Many domains (healthcare, finance, engineering) suffer from limited or sensitive datasets.
+- Traditional deep learning models struggle with long-term dependencies, training instability, and mode collapse.
+- Formal methods offer control, interpretability, and stability for synthetic data generation.
+
+## Methodology
+
+- **Modeling**: Build timed automata to capture the temporal dynamics of the system.
+- **Simulation**: Use UPPAAL to simulate and generate synthetic time series sequences.
+- **Data Extraction**: Convert simulation outputs into structured datasets.
+
+## Why Formal Methods?
+
+- **Explainability**: Models are interpretable and transparent.
+- **Temporal Coherence**: Naturally encode long-range dependencies.
+- **Stability**: Avoid adversarial training instability.
+- **Privacy**: No direct exposure of real sensitive data.
+
+## Tools
+
+- [UPPAAL](https://uppaal.org/) — for modeling and simulation
+- Python scripts (optional) — for automating simulation runs and parsing outputs
+
+
