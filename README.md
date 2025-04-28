@@ -33,7 +33,7 @@ This method provides a reliable, scalable, and interpretable alternative to GANs
 
 
 #**Variational Autoencoder for Synthetic Timeseries Data**
-# 📋 Project Description
+# 📋 Project Description :
 
 This project implements a Variational Autoencoder (VAE) model to learn and reconstruct synthetic timeseries data. The model is built using TensorFlow (Keras API) and focuses on encoding high-dimensional timeseries into a lower-dimensional latent space, and then decoding them back to approximate the original data.
 The goal is to visualize how well the VAE can learn patterns from the timeseries and generate similar sequences. The project also includes custom training, visualization of the original and reconstructed timeseries, and dimensionality reduction techniques.
