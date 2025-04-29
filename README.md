@@ -96,4 +96,116 @@ Zhang, Y., Ma, T., Li, T., Sun, X., & Liu, Z. (2024). Small sample data augmenta
 
 Liu, S., Wang, P., Chen, X., Jiang, P., Li, L., & Yin, S. (2025). An anomaly detection method for provincial-side base operation logs based on VAE and Transformer. State Grid Shandong Electric Power Company.
 
+Perfect!  
+You want a GitHub-style, full, professional README — **similar to the examples you sent** — but matching **your project**:  
+(**Synthetic Time Series Generation using TimeGAN and Model Inversion, done by you, Royal Abdullazade**).
+
+Here’s a complete README you can use directly for your GitHub or project submission:
+
+---
+
+# **Synthetic Time Series Generation using TimeGAN and Model Inversion**
+
+## 📋 Project Description
+
+This project implements a TimeGAN-inspired approach to generate synthetic time series data, with an exploration of model inversion techniques to improve the realism and fidelity of generated sequences.  
+The work was completed as part of a team project — this part was developed by **Royal Abdullazade**.
+
+The main goal was to create synthetic sequential datasets that preserve temporal dependencies while enhancing data fidelity through early model inversion ideas.  
+The project covers data preprocessing, model building, training, and visualization.
+
+---
+
+# 🔁 Repeatable Experiment: Step-by-Step Instructions
+
+## Environment Setup
+
+Install required libraries:
+
+```bash
+pip install tensorflow numpy matplotlib scikit-learn
+```
+Make sure you are using **Python 3.8+** and **TensorFlow 2.x**.
+
+---
+
+## Generate Synthetic Data
+- Generate a synthetic sequential dataset using random functions.
+- Normalize the dataset using `MinMaxScaler` to [0,1] range for stable training.
+
+---
+
+## Build the TimeGAN-Inspired Model
+- Define the **Generator** using LSTM layers.
+- Define the **Discriminator** using LSTM layers.
+- Implement a simple adversarial training loop.
+- Adapt TimeGAN principles to maintain sequential (time-dependent) properties.
+
+---
+
+## Training the Model
+- Train both generator and discriminator on normalized data.
+- Losses include:
+  - **Generator loss**: Encourage realistic synthetic sequences.
+  - **Discriminator loss**: Distinguish between real and synthetic sequences.
+- Basic model inversion idea: attempt to reconstruct meaningful inputs from synthetic outputs.
+
+---
+
+## Visualize Results
+- Plot real time series data.
+- Plot generated synthetic time series.
+- Compare the shapes, fluctuations, and patterns between real and synthetic sequences using Matplotlib.
+
+---
+
+# ⚙️ Technologies Used
+
+- **Python 3.8+**
+- **TensorFlow 2.x**
+- **NumPy**
+- **Matplotlib**
+- **scikit-learn**
+
+---
+
+# 📈 Project Workflow
+
+1. **Dataset Creation**  
+Random time series data generation.
+   
+2. **Data Preprocessing**  
+Normalization using `MinMaxScaler`.
+
+3. **Model Building**  
+Simple LSTM-based Generator and Discriminator.
+
+4. **Training**  
+Model training on synthetic time series data.
+
+5. **Model Inversion Exploration**  
+Testing early ideas on reversing synthetic outputs to input space.
+
+6. **Evaluation**  
+Plotting and analyzing the synthetic vs real data.
+
+---
+
+# 👤 Author
+
+- **Royal Abdullazade** — Part of a team project; contributed the TimeGAN-based synthetic data generation and initial model inversion concept development.
+
+---
+
+# 📚 References
+
+1. Yoon, Jinsung, Daniel Jarrett, and Mihaela van der Schaar (2019). "Time-series Generative Adversarial Networks." *Advances in Neural Information Processing Systems (NeurIPS)*. [Link](https://papers.nips.cc/paper/8789-time-series-generative-adversarial-networks)
+   
+2. Goodfellow, Ian, et al. (2014). "Generative Adversarial Networks." *Communications of the ACM*, Vol. 63 No. 11, Pages 139-144. [Link](https://arxiv.org/abs/1406.2661)
+   
+3. Chollet, François. (2015). *Keras: Deep Learning for Humans*. GitHub Repository. [Link](https://github.com/keras-team/keras)
+   
+4. Scikit-learn Developers. (2024). "scikit-learn: Machine Learning in Python." [Link](https://scikit-learn.org/)
+   
+5. TensorFlow Developers. (2024). "TensorFlow: An End-to-End Open Source Machine Learning Platform." [Link](https://www.tensorflow.org/)
 
