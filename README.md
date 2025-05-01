@@ -74,35 +74,44 @@ Verifying the correctness of the underlying model is essential to ensure the rel
 [1] Ahsan, M.M., Mahmud, M.P., Saha, P.K., Gupta, K.D., Siddique, Z.,
 2021. Effect of data scaling methods on machine learning algorithms
 and model performance. Technologies 9, 52.
+
 [2] Akkem, Y., Biswas, S.K., Varanasi, A., 2024. A comprehensive
 review of synthetic data generation in smart farming by using vari-
 ational autoencoder and generative adversarial network. Engineering
 Applications of Artificial Intelligence 131, 107881.
+
 Brophy, E., Wang, Z., She, Q., Ward, T., 2023. Generative adver-
 sarial networks in time series: A systematic literature review. ACM
 Computing Surveys 55, 1–31.
+
 [4] Bruni Prenestino, F., Barbierato, E., Gatti, A., 2025. Robust synthetic
 data generation for sequential financial models using hybrid varia-
 tional autoencoder–markov chain monte carlo architectures. Future
 Internet 17, 95.
+
 [5] Chougule, A., Agrawal, K., Chamola, V., 2023. Scan-gan: Generative
 adversarial network based synthetic data generation technique for
 controller area network. IEEE Internet of Things Magazine 6, 126–
 130.
+
 [6] Chowdhury, S.S., Boubrahimi, S.F., Hamdi, S.M., 2021. Time series
 data augmentation using time-warped auto-encoders, in: 2021 20th
 IEEE International Conference on Machine Learning and Applica-
 tions (ICMLA), IEEE. pp. 467–470.
+
 [7] Draghi, B., Wang, Z., Myles, P., Tucker, A., 2021. Bayesboost:
 Identifying and handling bias using synthetic data generators, in:
 Third International Workshop on Learning with Imbalanced Do-
 mains: Theory and Applications, PMLR. pp. 49–62.
+
 [8] Gkoutroumpi, C., Gkalinikis, N.V., Vrakas, D., 2024. Sgan: Appli-
 ance signatures data generation for nilm applications using gans, in:
 Science and Information Conference, Springer. pp. 325–339.
+
 [9] Hernandez, M., Epelde, G., Alberdi, A., Cilla, R., Rankin, D., 2022.
 Synthetic data generation for tabular health records: A systematic
 review. Neurocomputing 493, 28–45.
+
 [10] ensen, P.G., Jørgensen, K.Y., Larsen, K.G., Mikučionis, M., Muñiz,
 M., Poulsen, D.B., 2020. Fluid model-checking in uppaal for covid-
 19, in: Leveraging Applications of Formal Methods, Verification and
