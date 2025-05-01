@@ -209,3 +209,72 @@ Plotting and analyzing the synthetic vs real data.
    
 5. TensorFlow Developers. (2024). "TensorFlow: An End-to-End Open Source Machine Learning Platform." [Link](https://www.tensorflow.org/)
 
+# **Synthetic Time Series Generation using ARIMA**
+
+## 📋 Project Description
+
+This project implements an ARIMA model to generate synthetic time series data,
+The work was completed as part of a team project — this part was developed by **Fares ghezal**.
+
+---
+
+# 🔁 Repeatable Experiment: Step-by-Step Instructions
+
+## Environment Setup
+
+Install required libraries:
+
+```bash
+pip install kagglehub statsmodels numpy matplotlib scikit-learn plotly
+```
+Make sure you are using **Python 3.8+** 
+
+---
+
+# ⚙️ Technologies Used
+
+- **Python 3.8+**
+- **plotly**
+- **statsmodels**
+- **NumPy**
+- **Matplotlib**
+- **scikit-learn**
+
+---
+
+# 📈 Project Workflow
+
+1. **Dataset import and analysis**  
+import microsoft-stock-time-series-analysis from kagglehub and analyse dataset.
+   
+2. **Data Preprocessing**  
+featue selection and reducing frequency`.
+
+3. **Model Building**  
+ARIMA model from statsmodels.
+
+4. **Training**  
+Model training on synthetic time series data.
+
+6. **Evaluation**  
+Plotting and analyzing the synthetic vs real data.
+
+---
+
+# 👤 Author
+
+- **Fares Ghezal** — Part of a team project; contributed the ARIMA synthetic data generation .
+
+---
+
+# 📚 References
+
+1. Hu C, Sun Z, Li C, Zhang Y, Xing C. Survey of time series data generation in IoT. Sensors. 2023
+   
+2. Chen P, Pedersen T, Bak-Jensen B, Chen Z. ARIMA-based time series model of stochastic wind power generation. IEEE transactions on power systems. 2009
+
+3. Turowski M, Heidrich B, Weingärtner L, Springer L, Phipps K, Schäfer B, Mikut R, Hagenmeyer V. Generating synthetic energy time series: A review. Renewable and Sustainable Energy Reviews.
+   
+4. Scikit-learn Developers. (2024). "scikit-learn: Machine Learning in Python." [Link](https://scikit-learn.org/)
+
+
