@@ -1,34 +1,98 @@
-# Time Series Synthetic Data Generation via Formal Methods
+# **Formal methods for time series synthetic data generation*
 
-## Overview
+## 📋 Project Description
 
-This project proposes a novel approach to synthetic time series data generation using **formal methods** instead of traditional deep learning models.  
-We model time-dependent behaviors using **timed automata** and generate synthetic sequences through simulation with **UPPAAL**.  
-This method provides a reliable, scalable, and interpretable alternative to GANs and RNN-based approaches.
+This project implements utlizes formal methods, specifcally model checking in order to generate time series data. — this part was developed by **Ilyes REZGUI**.
 
-## Motivation
+---
 
-- Many domains (healthcare, finance, engineering) suffer from limited or sensitive datasets.
-- Traditional deep learning models struggle with long-term dependencies, training instability, and mode collapse.
-- Formal methods offer control, interpretability, and stability for synthetic data generation.
+# 🔁 Repeatable Experiment: Step-by-Step Instructions
 
-## Methodology
+## Environment Setup
 
-- **Modeling**: Build timed automata to capture the temporal dynamics of the system.
-- **Simulation**: Use UPPAAL to simulate and generate synthetic time series sequences.
-- **Data Extraction**: Convert simulation outputs into structured datasets.
+You need to install python 3 in order to run the notebook 
+You need to install uppaal from here https://uppaal.org/ in order to build the model and view it.
 
-## Why Formal Methods?
+---
 
-- **Explainability**: Models are interpretable and transparent.
-- **Temporal Coherence**: Naturally encode long-range dependencies.
-- **Stability**: Avoid adversarial training instability.
-- **Privacy**: No direct exposure of real sensitive data.
+# ⚙️ Technologies Used
 
-## Tools
+- **Python 3.8+**
+- **plotly**
+- **NumPy**
+- **Matplotlib**
+- **scikit-learn**
+- **UPPPPAL**
+- **Simulate**
 
-- [UPPAAL](https://uppaal.org/) — for modeling and simulation
-- Python scripts (optional) — for automating simulation runs and parsing outputs
+---
+
+# 📈 Project Workflow
+
+1. **Automata-Based System Representation**  
+The initial step in our proposed synthetic data generation approach involves formally abstracting the system's behavior using automata.
+   
+2. **Formal Modeling in UPPAAL**  
+After abstracting the system components using automata, we encode and implement these models in UPPAAL. UPPAAL extends classical automata with real-valued clocks, synchronization channels, guards, invariants, and user-defined variables, making it well-suited for modeling the timing constraints and complex interactions found in real-world systems.
+
+3. **Model Verification and Data Integrity Assurance**  
+Verifying the correctness of the underlying model is essential to ensure the reliability and validity of the generated data. This verification is conducted using UPPAAL, where temporal properties are defined to confirm the model's expected behavior. These properties, expressed in temporal logics like Computation Tree Logic (CTL) and simulation-based specifications, ensure that the system consistently meets the required conditions.
+
+4. **Data Generation using UPPAAL Concrete Simulator**  
+"Once the system behavior is formally modeled using UPPAAL’s timed automata, the next crucial step in our approach is leveraging the UPPAAL Concrete Simulator to generate synthetic data. This tool enables the execution of concrete instances of the timed automata, faithfully respecting timing constraints, variables, and communication protocols defined in the model. It provides a robust platform for simulating real-time system behavior and exploring diverse execution traces that reflect the dynamics of the modeled system.
+
+6. **Data Formatting**  
+"The ‘.uctr’ file captures detailed execution traces, including state transitions, variable values, and precise timing information. To enable downstream applications such as machine learning, analysis, or validation, these traces must be parsed and structured appropriately. We process the ‘.uctr’ file line by line, extracting key elements such as timestamps, transitions, and variable states. The extracted data is then organized into a structured format, such as a table or matrix. In UPPAAL models, variables represent the system’s dynamic state, encompassing both discrete state variables and real-time clock variables. These variables, logged at each transition, are crucial for accurately interpreting the system’s behavior.
+
+---
+
+# 👤 Author
+
+- **Ilyes REZGUI** — Part of a team project; focused on the use of fomal methods for the generation which never was explored before in the literature.
+
+---
+
+# 📚 References
+
+[1] Ahsan, M.M., Mahmud, M.P., Saha, P.K., Gupta, K.D., Siddique, Z.,
+2021. Effect of data scaling methods on machine learning algorithms
+and model performance. Technologies 9, 52.
+[2] Akkem, Y., Biswas, S.K., Varanasi, A., 2024. A comprehensive
+review of synthetic data generation in smart farming by using vari-
+ational autoencoder and generative adversarial network. Engineering
+Applications of Artificial Intelligence 131, 107881.
+Brophy, E., Wang, Z., She, Q., Ward, T., 2023. Generative adver-
+sarial networks in time series: A systematic literature review. ACM
+Computing Surveys 55, 1–31.
+[4] Bruni Prenestino, F., Barbierato, E., Gatti, A., 2025. Robust synthetic
+data generation for sequential financial models using hybrid varia-
+tional autoencoder–markov chain monte carlo architectures. Future
+Internet 17, 95.
+[5] Chougule, A., Agrawal, K., Chamola, V., 2023. Scan-gan: Generative
+adversarial network based synthetic data generation technique for
+controller area network. IEEE Internet of Things Magazine 6, 126–
+130.
+[6] Chowdhury, S.S., Boubrahimi, S.F., Hamdi, S.M., 2021. Time series
+data augmentation using time-warped auto-encoders, in: 2021 20th
+IEEE International Conference on Machine Learning and Applica-
+tions (ICMLA), IEEE. pp. 467–470.
+[7] Draghi, B., Wang, Z., Myles, P., Tucker, A., 2021. Bayesboost:
+Identifying and handling bias using synthetic data generators, in:
+Third International Workshop on Learning with Imbalanced Do-
+mains: Theory and Applications, PMLR. pp. 49–62.
+[8] Gkoutroumpi, C., Gkalinikis, N.V., Vrakas, D., 2024. Sgan: Appli-
+ance signatures data generation for nilm applications using gans, in:
+Science and Information Conference, Springer. pp. 325–339.
+[9] Hernandez, M., Epelde, G., Alberdi, A., Cilla, R., Rankin, D., 2022.
+Synthetic data generation for tabular health records: A systematic
+review. Neurocomputing 493, 28–45.
+[10] ensen, P.G., Jørgensen, K.Y., Larsen, K.G., Mikučionis, M., Muñiz,
+M., Poulsen, D.B., 2020. Fluid model-checking in uppaal for covid-
+19, in: Leveraging Applications of Formal Methods, Verification and
+Validation: Verification Principles: 9th International Symposium on
+Leveraging Applications of Formal Methods, ISoLA 2020, Rhodes,
+Greece, October 20–30, 2020, Proceedings, Part I 9, Springer. pp.
+385–403.
 
 
 
