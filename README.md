@@ -10,9 +10,26 @@ This project implements utlizes formal methods, specifcally model checking in or
 
 ## Environment Setup
 
-You need to install python 3 in order to run the notebook 
-You need to install uppaal from here https://uppaal.org/ in order to build the model and view it.
+1. **Install Python 3**  
+   Ensure that Python 3 is installed on your system to run the notebook.
 
+2. **Install UPPAAL**  
+   Download and install UPPAAL from [here](https://uppaal.org/) to build and visualize the model.
+
+3. **Running the Experiment**  
+   You can either:
+
+   - **Option 1: Run the Notebook Directly**  
+     Simply run the notebook to observe the data extraction process.
+
+   - **Option 2: Start from Scratch**  
+     1. Open UPPAAL and load the XML file to regenerate the synthetic data using the simulator and properties.
+     2. After generating the data, run the notebook to parse and analyze it.
+
+## Requirements
+
+- Python 3.x
+- UPPAAL installed and configured
 ---
 
 # ⚙️ Technologies Used
