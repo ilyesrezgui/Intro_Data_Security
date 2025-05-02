@@ -186,11 +186,6 @@ Zhang, Y., Ma, T., Li, T., Sun, X., & Liu, Z. (2024). Small sample data augmenta
 
 Liu, S., Wang, P., Chen, X., Jiang, P., Li, L., & Yin, S. (2025). An anomaly detection method for provincial-side base operation logs based on VAE and Transformer. State Grid Shandong Electric Power Company.
 
-Perfect!  
-You want a GitHub-style, full, professional README — **similar to the examples you sent** — but matching **your project**:  
-(**Synthetic Time Series Generation using TimeGAN and Model Inversion, done by you, Royal Abdullazade**).
-
-Here’s a complete README you can use directly for your GitHub or project submission:
 
 ---
 
