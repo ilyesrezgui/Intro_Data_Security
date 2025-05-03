@@ -355,7 +355,7 @@ Install required libraries:
 
 ```bash
 pip install torch opacus pandas numpy scikit-learn matplotlib
-
+```
 ⚙️ Technologies Used
 Python 3.8+
 
