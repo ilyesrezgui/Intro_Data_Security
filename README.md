@@ -341,3 +341,68 @@ Plotting and analyzing the synthetic vs real data.
 4. Scikit-learn Developers. (2024). "scikit-learn: Machine Learning in Python." [Link](https://scikit-learn.org/)
 
 
+## 🧪 Synthetic Time Series Generation with Differential Privacy  
+
+This project explores **privacy-preserving synthetic time series data generation** using **DP-GAN** and **DP-TimeGAN** models.  
+
+---
+
+### 🔁 Repeatable Experiment: Step-by-Step Instructions
+
+#### 📦 Environment Setup  
+
+Install required libraries:
+
+```bash
+pip install torch opacus pandas numpy scikit-learn matplotlib
+
+⚙️ Technologies Used
+Python 3.8+
+
+PyTorch
+
+Opacus
+
+Pandas
+
+NumPy
+
+scikit-learn
+
+Matplotlib
+2️⃣ Model Design
+DP-GAN:
+
+MLP-based Generator & Discriminator
+
+Differential Privacy via Opacus
+
+DP-TimeGAN:
+
+GRU-based Embedder, Recovery, Generator, Supervisor
+
+Discriminator with DP-SGD
+
+3️⃣ Training
+Autoencoder phase for sequence embedding
+
+Adversarial training with Differential Privacy (ε = 10.0, δ = 1e-5)
+
+4️⃣ Evaluation
+High-quality synthetic sequence generation
+
+Visual comparison with real data
+
+Privacy guarantees achieved
+
+👤 Author
+Kanan Orujov
+Contributed the privacy-preserving synthetic time series generation models using DP-GAN and DP-TimeGAN.
+
+📚 References
+Yoon, J. et al. TimeGAN: Time-series Generative Adversarial Networks
+
+Abadi, M. et al. Deep Learning with Differential Privacy
+
+Goodfellow, I. et al. Generative Adversarial Nets
+
