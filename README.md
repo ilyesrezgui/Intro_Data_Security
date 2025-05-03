@@ -163,6 +163,9 @@ Zhang, Y., Ma, T., Li, T., Sun, X., & Liu, Z. (2024). Small sample data augmenta
 
 Liu, S., Wang, P., Chen, X., Jiang, P., Li, L., & Yin, S. (2025). An anomaly detection method for provincial-side base operation logs based on VAE and Transformer. State Grid Shandong Electric Power Company.
 
+# 👤 Author
+
+- **Iness Mahjoub** — Part of a team project; contributed to a Variational Autoencoder (VAE) project aimed at learning meaningful latent representations from time series data.
 
 ---
 
