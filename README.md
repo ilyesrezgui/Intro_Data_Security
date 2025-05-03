@@ -149,9 +149,7 @@ NumPy<br>
 Matplotlib<br>
 Seaborn<br>
 Scikit-learn (for TSNE import, although not used heavily)
-# 👤 Author
 
-- **Ines Mahjoub** — Part of a team project; focused on the use of VAEs
 
 ---
 
