@@ -77,14 +77,17 @@ Validation: Verification Principles: 9th International Symposium on
 Leveraging Applications of Formal Methods, ISoLA 2020, Rhodes,
 Greece, October 20–30, 2020, Proceedings, Part I 9, Springer. pp.
 385–403
+
 Hafaiedh, I. B., Gafsi, A., Yahyaoui, M. Y., & Aouinette, Y. (2024). A 
 model-based approach for formal verification and performance 
 evaluation of energy harvesting architectures in IoT systems: A case 
 study of a long-term healthcare application. Simulation Modelling 
 Practice and Theory, 136, 102990. 
+
 Zhou, W., Zhao, Y., Zhang, Y., Wang, Y., & Yin, M. (2025). A 
 comprehensive survey of UPPAAL‐assisted formal modeling and 
 verification. Software: Practice and Experience, 55(2), 272-297. 
+
 Nikitin, A., Iannucci, L., & Kaski, S. (2024). Tsgm: A flexible 
 framework for generative modeling of synthetic time series. Advances 
 in Neural Information Processing Systems, 37, 129042-129061. 
