@@ -1,3 +1,35 @@
+# SEIHR Disease Process Modeling with UPPAAL and Data Generation
+
+In this project, we used UPPAAL to model the SEIHR (Susceptible, Exposed, Infectious, Hospitalized, Recovered) disease process. The structure of this model was based on the work by Jensen et al. (2020). Their paper explained how to build this type of timed automaton, and we followed their steps to simulate different epidemic scenarios. Their method also helped us write and check logic rules (called temporal properties) to ensure our generated data made sense and followed expected behaviors. 
+
+We also learned from Zhou et al. (2025) and Hafaiedh et al. (2024), who showed how UPPAAL can be used to define properties, such as `simulate` and `SMC`, that we used to formulate our `simulate` property and generate data from it.
+
+For more details, please refer to the simulation paper:  
+[UPPAAL Simulation Paper](https://github.com/ilyesrezgui/Intro_Data_Security/blob/ilyes-branch/Ilyes%20REZGUI/Model%201-%20COVID/Simulations%20(1)-%20UPPAAL.pdf)
+
+## Deep Learning Models for Time Series Data Generation
+
+To go further, we incorporated deep learning models to generate more flexible and complex time series data. We explored **TimeGAN** (Yoon et al., 2019), a model capable of creating time series that not only look real but also preserve the underlying time-dependent patterns. We also gained insights from the original **GAN paper** by Goodfellow et al. (2014). For building these models, we used tools like **TensorFlow** and **Keras** (Chollet, 2015).
+
+## Variational Autoencoders (VAEs)
+
+We also utilized **Variational Autoencoders (VAEs)** to handle small datasets and detect unusual patterns. The ideas from Tai et al. (2024) and Zhang et al. (2024) were particularly helpful, as they applied VAEs in similar data generation problems.
+
+## Traditional Statistical Models: ARIMA
+
+In addition to deep learning methods, we also employed traditional statistical models, primarily **ARIMA**, which are suitable for simpler, more predictable processes. We followed examples from Chen et al. (2009) and Turowski et al., who demonstrated how ARIMA can be used in applications like modeling power generation and weather data. A review by Hu et al. (2023) helped us position these methods within the broader context of time series generation.
+
+---
+
+
+
+
+
+
+
+
+
+
 # **Formal methods for time series synthetic data generation*
 
 ## 📋 Project Description
