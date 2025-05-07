@@ -113,16 +113,16 @@ in Neural Information Processing Systems, 37, 129042-129061.
 
 
 
-# **Variational Autoencoder for Synthetic Timeseries Data**
+# Approach 2 : **Variational Autoencoder for Synthetic Timeseries Data**
 # 📋 Project Description :
 
 This project implements a Variational Autoencoder (VAE) model to learn and reconstruct synthetic timeseries data. The model is built using TensorFlow (Keras API) and focuses on encoding high-dimensional timeseries into a lower-dimensional latent space, and then decoding them back to approximate the original data.
 The goal is to visualize how well the VAE can learn patterns from the timeseries and generate similar sequences. The project also includes custom training, visualization of the original and reconstructed timeseries, and dimensionality reduction techniques.
 
 
-# 🔁 Repeatable Experiment: Step-by-Step Instructions
+### 🔁 Repeatable Experiment: Step-by-Step Instructions
 
-## Environment Setup
+### Environment Setup
 
 Install required libraries:
 
@@ -131,26 +131,26 @@ pip install numpy matplotlib seaborn tensorflow scikit-learn
 ```
 Ensure you are using Python 3.7+ and TensorFlow 2.x.
 
-## Generate Synthetic Data
+### Generate Synthetic Data
 -Use the generate_timeseries_data() function to create random timeseries data.<br>
 -Normalize the data (zero mean, unit variance).
 
-## Build the Variational Autoencoder (VAE)
+### Build the Variational Autoencoder (VAE)
 Define the encoder with two outputs: latent mean and log-variance.<br>
 Define the decoder to reconstruct data from the latent space.
 
-## Training the Model
+### Training the Model
 Train the VAE with a custom loop using tf.GradientTape.<br>
 The loss function combines:<br>
   Reconstruction Loss (Mean Squared Error)<br>
   KL Divergence Loss (regularizes the latent space)
 
-## Visualize Results
+### Visualize Results
 Plot original synthetic timeseries.<br>
 Plot reconstructed timeseries after encoding/decoding.<br>
 Use Seaborn and Matplotlib for better plot aesthetics.
 
-## Run the Code:
+### Run the Code:
 Adjust hyperparameters in the main() function if needed:<br>
 ```bash
 num_samples = 3
@@ -161,7 +161,7 @@ batch_size = 32
 ```
 Run the script to visualize the VAE performance.
 
-# Technologies Used :
+### Technologies Used :
 Python 3.7+<br>
 TensorFlow 2.x (Keras API)<br>
 NumPy<br>
@@ -169,10 +169,9 @@ Matplotlib<br>
 Seaborn<br>
 Scikit-learn (for TSNE import, although not used heavily)
 
-
 ---
 
-# References : 
+### References : 
 
 Tai, B.-C., Li, S.-C., Huang, Y., & Wang, P.-C. (2024). Examining the utility of differentially private synthetic data generated using variational autoencoder with TensorFlow Privacy.<br>
 
@@ -186,9 +185,9 @@ Liu, S., Wang, P., Chen, X., Jiang, P., Li, L., & Yin, S. (2025). An anomaly det
 
 ---
 
-# **Synthetic Time Series Generation using TimeGAN and Model Inversion**
+# Approach 3 **Synthetic Time Series Generation using TimeGAN and Model Inversion**
 
-## 📋 Project Description
+### 📋 Project Description
 
 This project implements a TimeGAN-inspired approach to generate synthetic time series data, with an exploration of model inversion techniques to improve the realism and fidelity of generated sequences.  
 The work was completed as part of a team project — this part was developed by **Royal Abdullazade**.
@@ -198,9 +197,9 @@ The project covers data preprocessing, model building, training, and visualizati
 
 ---
 
-# 🔁 Repeatable Experiment: Step-by-Step Instructions
+### 🔁 Repeatable Experiment: Step-by-Step Instructions
 
-## Environment Setup
+### Environment Setup
 
 Install required libraries:
 
@@ -211,13 +210,13 @@ Make sure you are using **Python 3.8+** and **TensorFlow 2.x**.
 
 ---
 
-## Generate Synthetic Data
+### Generate Synthetic Data
 - Generate a synthetic sequential dataset using random functions.
 - Normalize the dataset using `MinMaxScaler` to [0,1] range for stable training.
 
 ---
 
-## Build the TimeGAN-Inspired Model
+### Build the TimeGAN-Inspired Model
 - Define the **Generator** using LSTM layers.
 - Define the **Discriminator** using LSTM layers.
 - Implement a simple adversarial training loop.
@@ -225,7 +224,7 @@ Make sure you are using **Python 3.8+** and **TensorFlow 2.x**.
 
 ---
 
-## Training the Model
+### Training the Model
 - Train both generator and discriminator on normalized data.
 - Losses include:
   - **Generator loss**: Encourage realistic synthetic sequences.
@@ -234,14 +233,14 @@ Make sure you are using **Python 3.8+** and **TensorFlow 2.x**.
 
 ---
 
-## Visualize Results
+### Visualize Results
 - Plot real time series data.
 - Plot generated synthetic time series.
 - Compare the shapes, fluctuations, and patterns between real and synthetic sequences using Matplotlib.
 
 ---
 
-# ⚙️ Technologies Used
+### ⚙️ Technologies Used
 
 - **Python 3.8+**
 - **TensorFlow 2.x**
@@ -251,7 +250,7 @@ Make sure you are using **Python 3.8+** and **TensorFlow 2.x**.
 
 ---
 
-# 📈 Project Workflow
+### 📈 Project Workflow
 
 1. **Dataset Creation**  
 Random time series data generation.
@@ -273,13 +272,13 @@ Plotting and analyzing the synthetic vs real data.
 
 ---
 
-# 👤 Author
+### 👤 Author
 
 - **Royal Abdullazade** — Part of a team project; contributed the TimeGAN-based synthetic data generation and initial model inversion concept development.
 
 ---
 
-# 📚 References
+### 📚 References
 
 1. Yoon, Jinsung, Daniel Jarrett, and Mihaela van der Schaar (2019). "Time-series Generative Adversarial Networks." *Advances in Neural Information Processing Systems (NeurIPS)*. [Link](https://papers.nips.cc/paper/8789-time-series-generative-adversarial-networks)
    
@@ -291,18 +290,18 @@ Plotting and analyzing the synthetic vs real data.
    
 5. TensorFlow Developers. (2024). "TensorFlow: An End-to-End Open Source Machine Learning Platform." [Link](https://www.tensorflow.org/)
 
-# **Synthetic Time Series Generation using ARIMA**
+# Approach 4 **Synthetic Time Series Generation using ARIMA**
 
-## 📋 Project Description
+### 📋 Project Description
 
 This project implements an ARIMA model to generate synthetic time series data,
 The work was completed as part of a team project — this part was developed by **Fares ghezal**.
 
 ---
 
-# 🔁 Repeatable Experiment: Step-by-Step Instructions
+### 🔁 Repeatable Experiment: Step-by-Step Instructions
 
-## Environment Setup
+### Environment Setup
 
 Install required libraries:
 
@@ -313,7 +312,7 @@ Make sure you are using **Python 3.8+**
 
 ---
 
-# ⚙️ Technologies Used
+### ⚙️ Technologies Used
 
 - **Python 3.8+**
 - **plotly**
@@ -324,7 +323,7 @@ Make sure you are using **Python 3.8+**
 
 ---
 
-# 📈 Project Workflow
+### 📈 Project Workflow
 
 1. **Dataset import and analysis**  
 import microsoft-stock-time-series-analysis from kagglehub and analyse dataset.
@@ -343,13 +342,13 @@ Plotting and analyzing the synthetic vs real data.
 
 ---
 
-# 👤 Author
+### 👤 Author
 
 - **Fares Ghezal** — Part of a team project; contributed the ARIMA synthetic data generation .
 
 ---
 
-# 📚 References
+### 📚 References
 
 1. Hu C, Sun Z, Li C, Zhang Y, Xing C. Survey of time series data generation in IoT. Sensors. 2023
    
@@ -360,7 +359,7 @@ Plotting and analyzing the synthetic vs real data.
 4. Scikit-learn Developers. (2024). "scikit-learn: Machine Learning in Python." [Link](https://scikit-learn.org/)
 
 
-## 🧪 Synthetic Time Series Generation with Differential Privacy  
+# Approach 5🧪 Synthetic Time Series Generation with Differential Privacy  
 
 This project explores **privacy-preserving synthetic time series data generation** using **DP-GAN** and **DP-TimeGAN** models.  
 
@@ -389,7 +388,7 @@ NumPy
 scikit-learn
 
 Matplotlib
-2️⃣ Model Design
+###2️⃣ Model Design
 DP-GAN:
 
 MLP-based Generator & Discriminator
@@ -402,23 +401,23 @@ GRU-based Embedder, Recovery, Generator, Supervisor
 
 Discriminator with DP-SGD
 
-3️⃣ Training
+###3️⃣ Training
 Autoencoder phase for sequence embedding
 
 Adversarial training with Differential Privacy (ε = 10.0, δ = 1e-5)
 
-4️⃣ Evaluation
+###4️⃣ Evaluation
 High-quality synthetic sequence generation
 
 Visual comparison with real data
 
 Privacy guarantees achieved
 
-👤 Author
+###👤 Author
 Kanan Orujov
 Contributed the privacy-preserving synthetic time series generation models using DP-GAN and DP-TimeGAN.
 
-📚 References
+###📚 References
 Yoon, J. et al. TimeGAN: Time-series Generative Adversarial Networks
 
 Abadi, M. et al. Deep Learning with Differential Privacy
