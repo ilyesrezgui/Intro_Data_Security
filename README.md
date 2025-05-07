@@ -438,6 +438,43 @@ Statistical fidelity
 
 Measured ε and δ compliance
 ---
+### Running the Project
+Create and activate a virtual environment:
+
+It’s recommended to use a virtual environment to avoid conflicts with other projects.
+
+On Windows:
+<pre>
+python -m venv myenv
+myenv\Scripts\activate
+</pre>
+On macOS/Linux:
+<pre>
+python -m venv myenv
+source myenv/bin/activate
+</pre>
+Run the code:
+<pre>
+python train_dpgan.py
+</pre>
+<pre>
+python train_dp_timegan.py
+</pre>
+Example output from our dataset (this may vary depending on your data and models):
+ <pre>
+(D) Epoch [12/50] Loss_D: 0.4615  Privacy ε: 5.92
+(D) Epoch [13/50] Loss_D: 0.4003  Privacy ε: 6.15
+(D) Epoch [14/50] Loss_D: 0.3885  Privacy ε: 6.38
+(D) Epoch [15/50] Loss_D: 0.4232  Privacy ε: 6.60
+(D) Epoch [16/50] Loss_D: 0.3725  Privacy ε: 6.82
+(D) Epoch [17/50] Loss_D: 0.3561  Privacy ε: 7.03
+(D) Epoch [18/50] Loss_D: 0.3106  Privacy ε: 7.24
+(D) Epoch [19/50] Loss_D: 0.3575  Privacy ε: 7.44
+(D) Epoch [20/50] Loss_D: 0.3573  Privacy ε: 7.64
+(D) Epoch [21/50] Loss_D: 0.2723  Privacy ε: 7.83
+(D) Epoch [22/50] Loss_D: 0.2790  Privacy ε: 8.02
+</pre>
+---
 👤 Author
 Kanan Orujov — Contributed the privacy-preserving synthetic time series generation using DP-GAN and DP-TimeGAN models.
 ---
