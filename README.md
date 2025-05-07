@@ -278,7 +278,6 @@ Plotting and analyzing the synthetic vs real data.
 
 ---
 
-### 📚 References
 
 ### 📚 References
 
