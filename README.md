@@ -17,25 +17,17 @@ In addition to deep learning methods, we also employed traditional statistical m
 ---
 
 
+# Approach 1:  *Formal methods for time series synthetic data generation*
 
-
-
-
-
-
-
-
-# *Formal methods for time series synthetic data generation*
-
-## 📋 Project Description
+### 📋 Project Description
 
 This project implements utlizes formal methods, specifcally model checking in order to generate time series data. — this part was developed by **Ilyes REZGUI**.
 
 ---
 
-# 🔁 Repeatable Experiment: Step-by-Step Instructions
+### 🔁 Repeatable Experiment: Step-by-Step Instructions
 
-## Environment Setup
+### Environment Setup
 
 1. **Install Python 3**  
    Ensure that Python 3 is installed on your system to run the notebook.
@@ -53,13 +45,13 @@ This project implements utlizes formal methods, specifcally model checking in or
      1. Open UPPAAL and load the XML file to regenerate the synthetic data using the simulator and properties.
      2. After generating the data, run the notebook to parse and analyze it.
 
-## Requirements
+### Requirements
 
 - Python 3.x
 - UPPAAL installed and configured
 ---
 
-# ⚙️ Technologies Used
+### ⚙️ Technologies Used
 
 - **Python 3.8+**
 - **plotly**
@@ -71,7 +63,7 @@ This project implements utlizes formal methods, specifcally model checking in or
 
 ---
 
-# 📈 Project Workflow
+### 📈 Project Workflow
 
 1. **Automata-Based System Representation**  
 The initial step in our proposed synthetic data generation approach involves formally abstracting the system's behavior using automata.
@@ -90,13 +82,13 @@ Verifying the correctness of the underlying model is essential to ensure the rel
 
 ---
 
-# 👤 Author
+### 👤 Author
 
 - **Ilyes REZGUI** — Part of a team project; focused on the use of fomal methods for the generation which never was explored before in the literature.
 
 ---
 
-# 📚 References
+### 📚 References
 Jensen, P.G., Jørgensen, K.Y., Larsen, K.G., Mikučionis, M., Muñiz,
 M., Poulsen, D.B., 2020. Fluid model-checking in uppaal for covid-
 19, in: Leveraging Applications of Formal Methods, Verification and
