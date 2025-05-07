@@ -6,7 +6,8 @@ We also learned from Zhou et al. (2025) and Hafaiedh et al. (2024), who showed h
 [UPPAAL Simulation Paper](https://github.com/ilyesrezgui/Intro_Data_Security/blob/ilyes-branch/Ilyes%20REZGUI/Model%201-%20COVID/Simulations%20(1)-%20UPPAAL.pdf)
 
 
-To go further, we incorporated deep learning models to generate more flexible and complex time series data. We explored **TimeGAN** (Yoon et al., 2019), a model capable of creating time series that not only look real but also preserve the underlying time-dependent patterns. We also gained insights from the original **GAN paper** by Goodfellow et al. (2014). For building these models, we used tools like **TensorFlow** and **Keras** (Chollet, 2015).
+To go further, we incorporated deep learning models to generate more flexible and complex time series data. We explored **TimeGAN** (Yoon et al., 2019), a model capable of creating time series that not only look real but also preserve the underlying time-dependent patterns. We also gained insights from the original **GAN paper** by Goodfellow et al. (2014). For building these models, we used tools like **TensorFlow** and **Keras** (Chollet, 2015), with preprocessing handled using **scikit-learn**. Supporting studies such as **Esteban et al. (2017)** and **Mirza & Osindero (2014)** helped guide our architecture and training design, while **Bai et al. (2018)** contributed to our understanding of recurrent vs convolutional sequence modeling.
+
 
 
 We also utilized **Variational Autoencoders (VAEs)** to handle small datasets and detect unusual patterns. The ideas from Tai et al. (2024) and Zhang et al. (2024) were particularly helpful, as they applied VAEs in similar data generation problems.
