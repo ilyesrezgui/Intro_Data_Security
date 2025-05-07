@@ -1,4 +1,4 @@
-# summary of what is in the references
+# Summary of what is in the references
 
 In this project, we used UPPAAL to model the SEIHR (Susceptible, Exposed, Infectious, Hospitalized, Recovered) disease process. The structure of this model was based on the work by Jensen et al. (2020). Their paper explained how to build this type of timed automaton, and we followed their steps to simulate different epidemic scenarios. Their method also helped us write and check logic rules (called temporal properties) to ensure our generated data made sense and followed expected behaviors. 
 
