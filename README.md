@@ -2,9 +2,7 @@
 
 In this project, we used UPPAAL to model the SEIHR (Susceptible, Exposed, Infectious, Hospitalized, Recovered) disease process. The structure of this model was based on the work by Jensen et al. (2020). Their paper explained how to build this type of timed automaton, and we followed their steps to simulate different epidemic scenarios. Their method also helped us write and check logic rules (called temporal properties) to ensure our generated data made sense and followed expected behaviors. 
 
-We also learned from Zhou et al. (2025) and Hafaiedh et al. (2024), who showed how UPPAAL can be used to define properties, such as `simulate` and `SMC`, that we used to formulate our `simulate` property and generate data from it.
-
-For more details, please refer to the simulation paper:  
+We also learned from Zhou et al. (2025) and Hafaiedh et al. (2024), who showed how UPPAAL can be used to define properties, such as `simulate` and `SMC`, that we used to formulate our `simulate` property and generate data from it. The figure generated from these properties is 
 [UPPAAL Simulation Paper](https://github.com/ilyesrezgui/Intro_Data_Security/blob/ilyes-branch/Ilyes%20REZGUI/Model%201-%20COVID/Simulations%20(1)-%20UPPAAL.pdf)
 
 
