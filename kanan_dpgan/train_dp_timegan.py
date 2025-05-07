@@ -4,16 +4,34 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 from opacus import PrivacyEngine
 import numpy as np
-
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
 # Set device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Dummy Dataset (Replace with your real one)
-X_train = np.random.rand(1000, 10, 6)  # (samples, timesteps, features)
-X_train = torch.tensor(X_train, dtype=torch.float32)
+# Load and preprocess real dataset
+df = pd.read_csv("time_series.csv")  # Make sure this file is in your working directory
+df = df.dropna()
+
+# Drop the 'time' column (we don't need it as input)
+df = df.drop(columns=['time'])
+
+# Normalize the data
+scaler = MinMaxScaler()
+normalized_data = scaler.fit_transform(df.values)
+
+# Reshape into sequences (e.g., 24 timesteps per sample)
+sequence_length = 24
+sequences = []
+for i in range(len(normalized_data) - sequence_length):
+    sequences.append(normalized_data[i:i+sequence_length])
+
+X_train = torch.tensor(np.array(sequences), dtype=torch.float32)
 
 # Hyperparameters
+# Hyperparameters
 hidden_dim = 24
+feature_dim = 5  # Set the feature dimension to 5
 batch_size = 64
 lr = 1e-3
 delta = 1e-5
@@ -53,8 +71,8 @@ class Discriminator(nn.Module):
         return self.model(h)
 
 # Initialize models
-embedder = Embedder(feature_dim=6, hidden_dim=hidden_dim).to(device)
-recovery = Recovery(hidden_dim=hidden_dim, feature_dim=6).to(device)
+embedder = Embedder(feature_dim=feature_dim, hidden_dim=hidden_dim).to(device)
+recovery = Recovery(hidden_dim=hidden_dim, feature_dim=feature_dim).to(device)
 discriminator = Discriminator(hidden_dim=hidden_dim).to(device)
 
 # Optimizers
