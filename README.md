@@ -280,15 +280,28 @@ Plotting and analyzing the synthetic vs real data.
 
 ### 📚 References
 
+### 📚 References
+
 1. Yoon, Jinsung, Daniel Jarrett, and Mihaela van der Schaar (2019). "Time-series Generative Adversarial Networks." *Advances in Neural Information Processing Systems (NeurIPS)*. [Link](https://papers.nips.cc/paper/8789-time-series-generative-adversarial-networks)
-   
+
 2. Goodfellow, Ian, et al. (2014). "Generative Adversarial Networks." *Communications of the ACM*, Vol. 63 No. 11, Pages 139-144. [Link](https://arxiv.org/abs/1406.2661)
-   
+
 3. Chollet, François. (2015). *Keras: Deep Learning for Humans*. GitHub Repository. [Link](https://github.com/keras-team/keras)
-   
+
 4. Scikit-learn Developers. (2024). "scikit-learn: Machine Learning in Python." [Link](https://scikit-learn.org/)
-   
+
 5. TensorFlow Developers. (2024). "TensorFlow: An End-to-End Open Source Machine Learning Platform." [Link](https://www.tensorflow.org/)
+
+6. Esteban, Cristóbal, et al. (2017). "Real-valued (Medical) Time Series Generation with Recurrent Conditional GANs." *arXiv preprint*. [Link](https://arxiv.org/abs/1706.02633)
+
+7. Bai, Shaojie, J. Zico Kolter, and Vladlen Koltun (2018). "An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling." *arXiv preprint*. [Link](https://arxiv.org/abs/1803.01271)
+
+8. Shalit, Uri, Fredrik D. Johansson, and David Sontag (2017). "Estimating Individual Treatment Effect: Generalization Bounds and Algorithms." *ICML Proceedings*. [Link](https://arxiv.org/abs/1606.03976)
+
+9. Mirza, Mehdi, and Simon Osindero (2014). "Conditional Generative Adversarial Nets." *arXiv preprint*. [Link](https://arxiv.org/abs/1411.1784)
+
+10. Dosovitskiy, Alexey and Thomas Brox (2016). "Generating Images with Perceptual Similarity Metrics based on Deep Networks." *NIPS Proceedings*. [Link](https://arxiv.org/abs/1602.02644)
+
 
 # Approach 4 **Synthetic Time Series Generation using ARIMA**
 
