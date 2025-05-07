@@ -374,25 +374,21 @@ Plotting and analyzing the synthetic vs real data.
 
 # Approach 5🧪 Synthetic Time Series Generation with Differential Privacy  
 
-This project explores **privacy-preserving synthetic time series data generation** using **DP-GAN** and **DP-TimeGAN** models.  
+Approach 5: Synthetic Time Series Generation with Differential Privacy 📋 Project Description This project investigates privacy-preserving synthetic time series generation using two deep learning models enhanced with Differential Privacy (DP): DP-GAN and DP-TimeGAN. The goal is to generate synthetic sequences that maintain the statistical properties of the original data while offering formal privacy guarantees.
+
+This work was contributed by Kanan Orujov, focusing on integrating DP techniques into generative models for sequence data.
 
 ---
 
 ### 🔁 Repeatable Experiment: Step-by-Step Instructions
-
-#### 📦 Environment Setup  
-
-Install required libraries:
-
-```bash
-pip install torch opacus pandas numpy scikit-learn matplotlib
-```
-⚙️ Technologies Used
+<pre> pip install torch opacus pandas numpy scikit-learn matplotlib </pre>
+Ensure you're using Python 3.8+.
+ Technologies Used
 Python 3.8+
 
 PyTorch
 
-Opacus
+Opacus (for Differential Privacy in PyTorch)
 
 Pandas
 
@@ -401,39 +397,59 @@ NumPy
 scikit-learn
 
 Matplotlib
-###2️⃣ Model Design
-DP-GAN:
 
-MLP-based Generator & Discriminator
+🧠 Model Design
+DP-GAN
+Architecture: MLP-based Generator and Discriminator.
 
-Differential Privacy via Opacus
+Privacy Mechanism: Integrated via Opacus using DP-SGD.
 
-DP-TimeGAN:
+DP-TimeGAN
+Architecture:
 
-GRU-based Embedder, Recovery, Generator, Supervisor
+GRU-based components: Embedder, Recovery, Generator, Supervisor
 
-Discriminator with DP-SGD
+Discriminator using DP-SGD
 
-###3️⃣ Training
-Autoencoder phase for sequence embedding
+Adapted from: Original TimeGAN with added differential privacy constraints.
 
-Adversarial training with Differential Privacy (ε = 10.0, δ = 1e-5)
+🏋️ Training
+Phase 1: Autoencoder pre-training for sequence embedding.
 
-###4️⃣ Evaluation
-High-quality synthetic sequence generation
+Phase 2: Adversarial training with Differential Privacy.
 
-Visual comparison with real data
+Parameters used:
 
-Privacy guarantees achieved
+ε (epsilon) = 10.0
 
-###👤 Author
-Kanan Orujov
-Contributed the privacy-preserving synthetic time series generation models using DP-GAN and DP-TimeGAN.
+δ (delta) = 1e-5
 
-###📚 References
+📈 Evaluation
+Visual Comparison: Real vs Synthetic time series plots.
+
+Privacy Verification: Ensured privacy budget was not exceeded.
+
+Metrics:
+
+Similarity in temporal trends
+
+Statistical fidelity
+
+Measured ε and δ compliance
+
+👤 Author
+Kanan Orujov — Contributed the privacy-preserving synthetic time series generation using DP-GAN and DP-TimeGAN models.
+
+📚 References
 Yoon, J. et al. TimeGAN: Time-series Generative Adversarial Networks
 
 Abadi, M. et al. Deep Learning with Differential Privacy
 
 Goodfellow, I. et al. Generative Adversarial Nets
+
+Dwork, C., & Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. Now Publishers.
+
+Beaulieu-Jones, B. K., et al. (2019). Privacy-preserving generative deep neural networks support clinical data sharing. Nature.
+
+Jordon, J., Yoon, J., & van der Schaar, M. (2018). PATE-GAN: Generating Synthetic Data with Differential Privacy Guarantees. ICLR.
 
