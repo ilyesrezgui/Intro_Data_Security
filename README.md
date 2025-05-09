@@ -40,10 +40,10 @@ This project implements utlizes formal methods, specifcally model checking in or
    You can either:
 
    - **Option 1: Run the Notebook Directly**  
-     Simply run the notebook to observe the data extraction process.
+     Simply run the notebook to observe the data extraction process.  COVID_Data_generation.ipynb
 
    - **Option 2: Start from Scratch**  
-     1. Open UPPAAL and load the XML file to regenerate the synthetic data using the simulator and properties.
+     1. Open UPPAAL and load the XML file (SEIHR.xml) to regenerate the synthetic data using the simulator and properties. After loading it, go to properties, then run the written simulate property and wait for its exacution. export the data into CSV
      2. After generating the data, run the notebook to parse and analyze it.
 
 ### Requirements
